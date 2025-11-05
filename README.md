@@ -19,6 +19,9 @@ In the Azure Active Directory User & Group Management project, Group Policies (G
 - Preparing on-premises Active Directory within Azure VMs
 - Configuring on-premises Active Directory within Azure VMs
 
+For additional information on how these virtual machines were set up, visit [Configuring Active Directory within Azure VMs](https://github.com/tylergehm/configure-ad)
+
+
 <h2>Operating Systems Used </h2>
 
 - Windows Server 2025

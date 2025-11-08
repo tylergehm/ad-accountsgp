@@ -95,5 +95,48 @@ This pop up box is also where it could be selected to force a password change at
 
 The user was successfully able to log back into their account. </p>
 
+<h2>Step 4 - Enable and disable an account</h2>
+
+<img width="938" height="656" alt="image" src="https://github.com/user-attachments/assets/c448c563-7f4f-4887-a931-47a0a4817a52" />
+
+To disable an account, open the "Active Directory Users and Computers" application. Find the user account within the domain that is to be disabled. Right click on the account name and click "Disable Account". </p>
+
+<img width="347" height="214" alt="image" src="https://github.com/user-attachments/assets/11499794-502a-4371-9496-388bbb1f2e4e" /> </p>
+
+The account has been disabled. </p>
+
+<img width="797" height="343" alt="image" src="https://github.com/user-attachments/assets/aab07b73-9682-4435-a4c5-d9cc41a0756b" /> </p>
+
+When the user attempted to log in to the account, the pop up message appeared stating that the account was disabled. </p>
+
+<img width="935" height="657" alt="image" src="https://github.com/user-attachments/assets/7524b053-909a-4e3e-a076-2b9c226715e0" />
+
+To enable the account, return to the "Active Directory Users and Computers" application on the Domain Controller VM. Right click on the account name and click "Enable Account". </p>
+
+<img width="346" height="214" alt="image" src="https://github.com/user-attachments/assets/d637ccb2-7795-4800-a3ba-48328726c685" /> </p>
+
+The account has been successfully enabled. </p>
+
+<img width="1910" height="1079" alt="image" src="https://github.com/user-attachments/assets/a69659a9-ee06-4470-b891-9c226c140215" /> </p>
+
+The user was succesfully able to log back into their account. </p>
+
+<h2>Step 5 - Observe Authentication and Security logs in Event Viewer</h2>
+
+<img width="456" height="272" alt="image" src="https://github.com/user-attachments/assets/3a675e24-c565-4e38-bd2a-c4d96b7b1e7b" /> </p>
+
+To begin observing the logs, open the run command in the DC VM and type "eventvwr.msc" to open the Event Viewer. </p>
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3cd55139-c269-4e68-8c1e-b2c49e33a4b4" />
+
+Once the Event Viewer application opens up; click the down arrow next to "Windows Logs" then click "Security". This showcases all of the event logs related to security that have occured on the network of the domain. </p>
+
+<img width="1916" height="1016" alt="image" src="https://github.com/user-attachments/assets/27145af6-2a3a-405d-bcf7-4472f3e539af" /> </p>
+
+Here can be seen the log in failure when the user account was disabled previously in the project. </p>
+
+<h2>Conclusion</h2>
+
+This Azure-based Active Directory lab effectively demonstrates enterprise-grade user and group management by configuring account lockout policies via Group Policy, enforcing security through failed login thresholds, and testing real-world scenarios such as account disabling and log analysis. By leveraging tools like gpupdate /force, Active Directory Users and Computers, and Event Viewer, the project illustrates how administrators can centrally control authentication behavior, respond to security events, and maintain audit trails across domain-joined systems. These hands-on practices reinforce foundational IT security principles—balancing usability with protection against brute-force attacks and unauthorized access—preparing learners to manage identity and access in production Windows environments with confidence and precision.
 
 

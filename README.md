@@ -2,7 +2,7 @@
 </p>
 </p>
 
-<h1>Active Directory: User & Group Management in Azure</h1>
+<h1>Active Directory: User & Group Management within Azure Virtual Machines</h1>
 In the Azure Active Directory User & Group Management project, Group Policies (GPOs) are centralized settings applied via Active Directory to manage user and computer configurations, enforcing security and behavior across the domain. The lab continues with account lockout testing: configuring a GPO to lock accounts after 5 failed attempts, attempting a login with a bad password, then observing the lock out being triggered. Then the account will be unlocked, resetting the password, and confirming a successful login. Next, an account will be disabled in Active Directory, demonstrating the lockout, then re-enabling the account and verifying access. The authentication and lock out events utilize both the domain controller and client machine. <br />
 
 
@@ -20,6 +20,10 @@ In the Azure Active Directory User & Group Management project, Group Policies (G
 - Configuring on-premises Active Directory within Azure VMs
 
 For additional information on how these virtual machines and Active Directory were set up, visit [Configuring Active Directory within Azure VMs](https://github.com/tylergehm/configure-ad)
+
+<h2>Video Demonstration</h2>
+
+- ### [YouTube: Active Directory: User & Group Management within Azure Virtual Machines](https://www.youtube.com/watch?v=KjZP8bFe95Y)
 
 
 <h2>Operating Systems Used </h2>
